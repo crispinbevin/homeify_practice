@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: "Montserrat", serif;
+    font-family: "Ubuntu", serif;
 }
 
 .section1{
@@ -50,7 +50,38 @@ body{
     transition-property: background-color, color;
 }
 
-.navigation-bar button:hover{
+.navigation-bar button:hover, .section1-content p button:hover{
     background-color: white;
     color: var(--primary);
+}
+
+.section1-content{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-inline: 150px;
+}
+
+.section1-content p{
+    line-height: 1;
+    color: white;
+    font-size: 6rem;
+}
+
+.section1-content p button{
+    font-size: 1rem;
+    background-color: var(--primary);
+    color: white;
+    border-color: white ;
+    border-radius: 40px;
+    padding: 15px 30px;
+    box-shadow: none;
+    transition-duration: 300ms;
+    transition-property: background-color, color;
+}
+
+.section1-media img{
+    object-fit: cover;
+    width: 550px;
+    shape-outside: url(imageFiles/home-hero.avif);
 }
