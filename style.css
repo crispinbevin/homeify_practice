@@ -126,12 +126,12 @@ body{
     font-family: Arial, sans-serif;
 }
 .faq-head p{
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
 }
 .faq-section {
     
-    max-width: 600px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
   }
@@ -149,23 +149,207 @@ body{
   }
   
   .faq-question span {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 30px;
+    
   }
   
   .toggle-btn {
     background-color: transparent;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     outline: none;
+    color:orangered;
   }
   
   .faq-answer {
     display: none;
     margin-top: 10px;
     color: #555;
+    font-size: 20px;
+  }
+  .get-in-touch{
+    background-color: rgb(0, 31, 0);
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .get-in-touch-img-bg {
+    background-image: url('./imageFiles/get-in-touch-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ .get-in-touch-img-person img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .get-in-touch-p p{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10%;
+    padding-bottom: 50px;
+  }
+  .get-in-touch-btn {
+    padding-left: 10%;
+  }
+  .get-in-touch-btn button {
+    background-color: #fff;
+    color: rgb(0, 31, 0);
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+    .get-in-touch-btn button:hover{
+        color: #fff;
+        background-color: rgb(0, 31, 0); 
+    }
+  @media (max-width: 768px) {
+    .get-in-touch {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .get-in-touch-image {
+      margin-bottom: 20px;
+    }
+  
+    .get-in-touch-p {
+      font-size: 20px;
+    }
+  }
+  .footer {
+    
+    padding: 100px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto; 
+   
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .footer-logo {
+    flex: 1 1 25%;
+    max-width: 25%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
     font-size: 16px;
+    /* line-height: 1.6; */
+    margin-bottom: 15px;
+  }
+  
+  .footer-socials a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-btn {
+    background-color: #ff5c00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .footer-btn:hover{
+    background-color: #fff;
+    color:  #ff5c00;
+    border-width: 1px;
+    border-color: #ff5c00 ;
+    padding: 12px 30px;
+  }
+  .footer-links {
+    display: flex;
+    flex: 2 1 65%;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .footer-column a {
+    display: block;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    color: #ff5c00;
+  }
+
+  .footer-help {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    max-width: 800px;
+    margin: 20px auto; 
+  }
+  
+  .footer-help h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .footer-help p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
   }
   
