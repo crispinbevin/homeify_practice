@@ -91,7 +91,7 @@ body{
 }
 
 .aboutUs-section{
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     background-color: var(--primary);
     color: white;
@@ -104,6 +104,7 @@ body{
     display: flex;
     flex-direction: row;
     margin: 100px 50px;
+    margin-top: 250px;
     gap: 50px;
 }
 
@@ -116,9 +117,6 @@ body{
 .aboutUs-content{
     margin-inline: 50px;
     font-weight: lighter; 
-}
-
-.about-floating-image img{
 }
 
 .aboutUs-content h6{
