@@ -171,3 +171,87 @@ body{
 .about-bullets h3{
     font-weight: 400;
 }
+
+.listings-section{
+    min-height: 100vh;
+    background-color: white;
+    margin-top: 200px;
+}
+
+.listings-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.listings-wrapper h1{
+    font-size: 5rem;
+    font-weight: 450;
+}
+
+.listings-item{
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    gap: px;
+}
+
+
+.listings-img{
+    width: 100%;
+}
+
+.listings-img img{
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    scale: 1.1;
+    border-radius: 20px;
+    transition: transform 300ms ease-in-out;
+
+}
+
+.listings-img img:hover{
+    transform: scale(1.125);
+}
+
+
+
+.listings-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: lighter;
+
+}
+
+
+.listings-text h2{
+    font-weight: 450;
+    font-size: 3rem;
+    transition-duration: 200ms;
+}
+.listings-text h2:hover{
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.listings-text h6{
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.listings-price{
+    display: flex;
+    align-content: end;
+}
+
+.amt{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.month{
+    padding: 8px;
+    align-self: flex-end;
+}
