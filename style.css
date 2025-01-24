@@ -7,6 +7,13 @@ body{
     font-family: "Ubuntu", serif;
 }
 
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .section1{
     background-color: var(--primary);
     min-height: 100vh;
@@ -65,6 +72,12 @@ body{
     line-height: 1;
     color: white;
     font-size: 6rem;
+
+    
+
+    opacity: 0;
+    transform: translateY(-150px);
+    animation: fadeIn 900ms ease-in-out 100ms forwards;
 }
 
 .section1-content p button{
@@ -84,6 +97,163 @@ body{
     width: 550px;
     float: right;
     shape-outside: url(imageFiles/home-hero.avif);
+
+    
+
+    opacity: 0;
+    transform: translateY(-150px);
+    animation: fadeIn 900ms ease-in-out forwards;
+}
+
+.blank-section{
+    height: 20vh;
+}
+
+.aboutUs-section{
+    min-height: 90vh;
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutUs-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 50px;
+    margin-top: 250px;
+    gap: 50px;
+}
+
+@media screen and(max-width:1100px){
+    .aboutUs-wrapper{
+        flex-direction: column;
+    }
+}
+
+.aboutUs-content{
+    margin-inline: 50px;
+    font-weight: lighter; 
+}
+
+.aboutUs-content h6{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.aboutUs-content h1{
+    font-size: 5rem;
+    font-weight: lighter;
+}
+
+.aboutUs-content p{
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+.about-bullets{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+
+
+.bullets-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.about-bullets h3{
+    font-weight: 400;
+}
+
+.listings-section{
+    min-height: 100vh;
+    background-color: white;
+    margin-top: 200px;
+}
+
+.listings-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.listings-wrapper h1{
+    font-size: 5rem;
+    font-weight: 450;
+}
+
+.listings-item{
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    gap: px;
+}
+
+
+.listings-img{
+    width: 100%;
+}
+
+.listings-img img{
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    scale: 1.1;
+    border-radius: 20px;
+    transition: transform 300ms ease-in-out;
+
+}
+
+.listings-img img:hover{
+    transform: scale(1.125);
+}
+
+
+
+.listings-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: lighter;
+
+}
+
+
+.listings-text h2{
+    font-weight: 450;
+    font-size: 3rem;
+    transition-duration: 200ms;
+}
+.listings-text h2:hover{
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.listings-text h6{
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.listings-price{
+    display: flex;
+    align-content: end;
+}
+
+.amt{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.month{
+    padding: 8px;
+    align-self: flex-end;
 }
 
 /* searchbar */
