@@ -86,11 +86,12 @@ body{
     shape-outside: url(imageFiles/home-hero.avif);
 }
 
-
+/* searchbar */
 .search-bar{
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
@@ -126,9 +127,10 @@ body{
     border: 2px solid #ddd;
     border-radius: 25px;
     padding: 5px 15px;
-    width: 800px;
+    max-width: 800px;
     background-color: #f9f9f9;
     margin-bottom: 20px;
+    box-sizing: border-box;
     
 }
   
@@ -148,6 +150,7 @@ body{
     position: relative;
     bottom: 8px;
     right: 50px;
+    flex-wrap: wrap;
 }
 
 .filter-item {
@@ -170,6 +173,57 @@ body{
     border-top: 5px solid #333;
 }
 
+
+@media (max-width: 768px) {
+    .search-bar {
+      flex-direction: column; 
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .search-input {
+      width: 100%; 
+      height: 45px;
+    }
+  
+    .search-button {
+      width: 100%; 
+      text-align: center;
+    }
+  
+    .filter-options {
+      justify-content: center; 
+      gap: 10px;
+    }
+  
+    .filter-item {
+      font-size: 14px;
+      padding: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-bar {
+      padding: 10px; 
+      gap: 5px;
+    }
+  
+    .search-input {
+      font-size: 14px;
+      padding: 5px 10px;
+      height: 40px;
+    }
+  
+    .search-button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  
+    .filter-item {
+      font-size: 12px;
+    }
+  }
+/* endofsearchbar */
 
 
 /*section2*/
@@ -194,8 +248,6 @@ body{
     justify-content: space-between;
     margin-bottom: 40px;
 }
-
-
 
 
 #section2-heading{
@@ -278,3 +330,66 @@ body{
   .house-details-2{
     padding-top: 10px;
   }
+
+
+  @media (max-width: 768px) {
+    .section2-1 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #section2-heading {
+      font-size: 2.5rem;
+    }
+  
+    #explore {
+      margin-top: 20px;
+    }
+  
+    .section2-2 {
+      gap: 15px;
+    }
+  
+    .card.houses {
+      width: 100%;
+      max-width: 90%;
+    }
+  
+    .house-details {
+      gap: 40px;
+    }
+  }
+
+
+  @media (max-width: 480px) {
+    #section2-heading {
+      font-size: 2rem;
+    }
+  
+    .house-title {
+      font-size: 1.1rem;
+    }
+  
+    .house-addr,
+    .house-price,
+    .house-size {
+      font-size: 0.8rem;
+    }
+  
+    .house-details {
+      gap: 20px;
+    }
+  }
+
+
+.search-bar, .section2{
+    scale: .8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes fade-in{
+    to{scale:1; opacity:1;}
+}
