@@ -93,6 +93,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
 }
+
 .testimonial-head h1{
     font-size: 70px;
 }
@@ -105,6 +106,19 @@ body{
 .test-image img{
    width: 400PX;
    height: 500px;
+}
+body{
+  animation:fade-in linear;
+  animation-timeline: view(250px);
+  animation-range: entry;
+}
+@keyframes fade-in{
+  from{
+    scale: .8; opacity: 0;
+  }
+  to{
+    scale: 1; opacity: 1;
+  }
 }
 .author-space{
     padding-top: 15%;

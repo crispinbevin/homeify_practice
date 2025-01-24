@@ -8,4 +8,4 @@ function toggleAnswer(button) {
       button.textContent = "-";
     }
   }
-  
+
